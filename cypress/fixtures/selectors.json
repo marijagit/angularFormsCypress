@@ -1,0 +1,9 @@
+{
+    "fullName": "#FullName",
+    "userName": "#Username",
+    "email": "#Email",
+    "password": "#Password",
+    "confirmPassword": "#ConfirmPassword",
+    "acceptTerms": "#AcceptTerms",
+    "form": "form"
+}

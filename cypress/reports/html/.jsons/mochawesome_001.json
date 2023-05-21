@@ -1,0 +1,209 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-05-15T09:12:36.323Z",
+    "end": "2023-05-15T09:12:48.525Z",
+    "duration": 12202,
+    "testsRegistered": 6,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ae6bbe05-6203-4b3b-931f-ccceb493582a",
+      "title": "",
+      "fullFile": "cypress\\tests\\registration.cy.js",
+      "file": "cypress\\tests\\registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+          "title": "Testing Registration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testing 1/6 fields correct",
+              "fullTitle": "Testing Registration Testing 1/6 fields correct",
+              "timedOut": null,
+              "duration": 4774,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\registration.cy.js\\\\Testing Registration -- Testing 16 fields correct (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.submit();\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessage(data.userNameRequired);\npageUnderTest.password.verifyErrorMessage(data.passwordRequired);\npageUnderTest.email.verifyErrorMessage(data.emailRequired);\npageUnderTest.confirmPassword.verifyErrorMessage(data.confirmPasswordRequired);\npageUnderTest.acceptTerms.verifyErrorMessage(data.acceptTermsRequired);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<input _ngcontent-rdw-c1=\"\" type=\"text\" formcontrolname=\"fullname\" class=\"form-control ng-untouched ng-pristine ng-invalid\" ng-reflect-name=\"fullname\" ng-reflect-ng-class=\"[object Object]\">`\n\nis being covered by another element:\n\n`<iframe id=\"webpack-dev-server-client-overlay\" src=\"about:blank\" style=\"position: fixed; inset: 0px; width: 100vw; height: 100vh; border: none; z-index: 2147483647;\"></iframe>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<input _ngcontent-rdw-c1=\"\" type=\"text\" formcontrolname=\"fullname\" class=\"form-control ng-untouched ng-pristine ng-invalid\" ng-reflect-name=\"fullname\" ng-reflect-ng-class=\"[object Object]\">`\n\nis being covered by another element:\n\n`<iframe id=\"webpack-dev-server-client-overlay\" src=\"about:blank\" style=\"position: fixed; inset: 0px; width: 100vw; height: 100vh; border: none; z-index: 2147483647;\"></iframe>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (http://localhost:4200/__cypress/runner/cypress_runner.js:139649:76)\n    at ensureDescendents (http://localhost:4200/__cypress/runner/cypress_runner.js:139700:5)\n    at ensureDescendentsAndScroll (http://localhost:4200/__cypress/runner/cypress_runner.js:139706:14)\n    at ensureElIsNotCovered (http://localhost:4200/__cypress/runner/cypress_runner.js:139837:5)\n    at runAllChecks (http://localhost:4200/__cypress/runner/cypress_runner.js:140017:52)\n    at retryActionability (http://localhost:4200/__cypress/runner/cypress_runner.js:140054:16)\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (http://localhost:4200/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (http://localhost:4200/__cypress/runner/cypress_runner.js:156168:65)\n    at <unknown> (http://localhost:4200/__cypress/runner/cypress_runner.js:155609:14)\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (http://localhost:4200/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (http://localhost:4200/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at TextInput.setValue (webpack:///./cypress/support/textInput-command.ts:9:44)\n    at Context.eval (webpack:///./cypress/tests/registration.cy.js:24:31)",
+                "diff": null
+              },
+              "uuid": "ff1c63f2-af89-4614-bdf9-936693552b9c",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing 2/6 fields correct",
+              "fullTitle": "Testing Registration Testing 2/6 fields correct",
+              "timedOut": null,
+              "duration": 330,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\registration.cy.js\\\\Testing Registration -- Testing 26 fields correct (failed).png\"\n      },\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\registration.cy.js\\\\Testing Registration -- Testing 26 fields correct -- after each hook (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.password.setValue(data.passwordValid);\npageUnderTest.password.checkValue(data.passwordValid);\npageUnderTest.submit();\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessage(data.userNameRequired);\npageUnderTest.email.verifyErrorMessage(data.emailRequired);\npageUnderTest.confirmPassword.verifyErrorMessage(data.confirmPasswordRequired);\npageUnderTest.acceptTerms.verifyErrorMessage(data.acceptTermsRequired);",
+              "err": {
+                "message": "AssertionError: expected '<input.form-control.ng-dirty.ng-valid.ng-touched>' to have value '', but the value was 'Test Full Name'\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Testing Registration`",
+                "estack": "AssertionError: expected '<input.form-control.ng-dirty.ng-valid.ng-touched>' to have value '', but the value was 'Test Full Name'\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Testing Registration`\n    at TextInput.checkValue (webpack:///./cypress/support/textInput-command.ts:13:44)\n    at pageUnderTest.resetAndCheckRegistration (webpack:///./cypress/pageUnderTest.js:89:22)\n    at Context.eval (webpack:///./cypress/tests/registration.cy.js:20:22)",
+                "diff": "- '\\'Test Full Name\\''\n"
+              },
+              "uuid": "56bb1cd5-4b2c-4a8b-a340-54939bc41b1d",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing passwords not matched",
+              "fullTitle": "Testing Registration Testing passwords not matched",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.userName.setValue(data.userNameValid);\npageUnderTest.userName.checkValue(data.userNameValid);\npageUnderTest.email.setValue(data.emailValid);\npageUnderTest.email.checkValue(data.emailValid);\npageUnderTest.password.setValue(data.passwordValid);\npageUnderTest.password.checkValue(data.passwordValid);\npageUnderTest.confirmPassword.setValue(data.fullName);\npageUnderTest.confirmPassword.checkValue(data.fullName);\npageUnderTest.acceptTerms.setValue();\npageUnderTest.acceptTerms.checkValue(true);\npageUnderTest.submit();\npageUnderTest.confirmPassword.verifyErrorMessage(data.confirmPasswordNoMatch);\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessageNonExistent();\npageUnderTest.email.verifyErrorMessageNonExistent();\npageUnderTest.password.verifyErrorMessageNonExistent();\npageUnderTest.acceptTerms.verifyErrorMessageNonExistent();",
+              "err": {},
+              "uuid": "a8ee3c51-f200-4d2b-b266-1db689fbf955",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Testing username too short",
+              "fullTitle": "Testing Registration Testing username too short",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.userName.setValue(data.userNameShort);\npageUnderTest.userName.checkValue(data.userNameShort);\npageUnderTest.email.setValue(data.emailValid);\npageUnderTest.email.checkValue(data.emailValid);\npageUnderTest.password.setValue(data.passwordValid);\npageUnderTest.password.checkValue(data.passwordValid);\npageUnderTest.confirmPassword.setValue(data.passwordValid);\npageUnderTest.confirmPassword.checkValue(data.passwordValid);\npageUnderTest.acceptTerms.setValue();\npageUnderTest.acceptTerms.checkValue(true);\npageUnderTest.submit();\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessage(data.userNameTooShort);\npageUnderTest.email.verifyErrorMessageNonExistent();\npageUnderTest.password.verifyErrorMessageNonExistent();\npageUnderTest.confirmPassword.verifyErrorMessageNonExistent();\npageUnderTest.acceptTerms.verifyErrorMessageNonExistent();",
+              "err": {},
+              "uuid": "0d7c833a-4714-49c6-892d-421dee699780",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Testing accept terms missing",
+              "fullTitle": "Testing Registration Testing accept terms missing",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.userName.setValue(data.userNameValid);\npageUnderTest.userName.checkValue(data.userNameValid);\npageUnderTest.email.setValue(data.emailValid);\npageUnderTest.email.checkValue(data.emailValid);\npageUnderTest.password.setValue(data.passwordValid);\npageUnderTest.password.checkValue(data.passwordValid);\npageUnderTest.confirmPassword.setValue(data.passwordValid);\npageUnderTest.confirmPassword.checkValue(data.passwordValid);\npageUnderTest.submit();\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessageNonExistent();\npageUnderTest.email.verifyErrorMessageNonExistent();\npageUnderTest.password.verifyErrorMessageNonExistent();\npageUnderTest.confirmPassword.verifyErrorMessageNonExistent();\npageUnderTest.acceptTerms.verifyErrorMessage(data.acceptTermsRequired);",
+              "err": {},
+              "uuid": "93af65d7-deac-4a95-8558-2d60750dcdd4",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Testing all fields correct",
+              "fullTitle": "Testing Registration Testing all fields correct",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pageUnderTest.fullName.setValue(data.fullName);\npageUnderTest.fullName.checkValue(data.fullName);\npageUnderTest.userName.setValue(data.userNameValid);\npageUnderTest.userName.checkValue(data.userNameValid);\npageUnderTest.email.setValue(data.emailValid);\npageUnderTest.email.checkValue(data.emailValid);\npageUnderTest.password.setValue(data.passwordValid);\npageUnderTest.password.checkValue(data.passwordValid);\npageUnderTest.confirmPassword.setValue(data.passwordValid);\npageUnderTest.confirmPassword.checkValue(data.passwordValid);\npageUnderTest.acceptTerms.setValue();\npageUnderTest.acceptTerms.checkValue(true);\npageUnderTest.submit();\npageUnderTest.fullName.verifyErrorMessageNonExistent();\npageUnderTest.userName.verifyErrorMessageNonExistent();\npageUnderTest.email.verifyErrorMessageNonExistent();\npageUnderTest.password.verifyErrorMessageNonExistent();\npageUnderTest.confirmPassword.verifyErrorMessageNonExistent();\npageUnderTest.acceptTerms.verifyErrorMessageNonExistent();",
+              "err": {},
+              "uuid": "37b778b3-fd61-4f1c-991b-a46acfb6a121",
+              "parentUUID": "f3210d77-c9ee-4bd4-a30a-7bdddb018aa2",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ff1c63f2-af89-4614-bdf9-936693552b9c",
+            "56bb1cd5-4b2c-4a8b-a340-54939bc41b1d"
+          ],
+          "pending": [],
+          "skipped": [
+            "a8ee3c51-f200-4d2b-b266-1db689fbf955",
+            "0d7c833a-4714-49c6-892d-421dee699780",
+            "93af65d7-deac-4a95-8558-2d60750dcdd4",
+            "37b778b3-fd61-4f1c-991b-a46acfb6a121"
+          ],
+          "duration": 5104,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
